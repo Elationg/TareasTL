@@ -1,83 +1,62 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family:monospace;
   margin: 0;
   padding: 0;
-}
-
-/* Estilos del encabezado */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
 }
 
 /* Estilos de la barra de navegación */
 nav {
-  background-color: #575555;
-  padding: 10px;
-  text-align: center;
+    background-color: #272736;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+nav .navbar-brand {
+    color: #F57E78;
+    font-weight:900;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: .5;
+    color: #F57E78;
+    background-color: #ffffff00;
+    border-color: #F57E78;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 5px;
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image:url(/img/burgericon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
-/* Estilos del contenido principal */
-main {
-  padding: 20px;
+nav .nav-link {
+    text-decoration: none;
+    color: #F57E78;
+    padding: 5px;
 }
 
-/* Estilos de las secciones */
-section {
-  margin-bottom: 30px;
+nav .nav-link:focus, .nav-link:hover {
+    color: #ffffff;
 }
 
-section h2 {
-  color: #333;
-}
+form .btn-outline {
+    color: #ffffff;
+    border-color: #ffffff;
+} 
 
-/* Estilos de los proyectos */
-.project {
-  margin-bottom: 20px;
-}
+form .btn-outline:hover, .btn-outline:focus {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #F57E78;
 
-.project img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
-
-.project h3 {
-  margin-top: 10px;
-}
-
-.project p {
-  color: #777;
-}
-
-.project a {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  margin-top: 10px;
 }
 
 /* Estilos del pie de página */
