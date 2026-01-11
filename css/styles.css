@@ -10,7 +10,7 @@ nav {
     background-color: #272736;
 }
 
-nav .navbar-brand {
+.navbar-brand {
     color: #F57E78;
     font-weight:900;
 }
@@ -47,23 +47,35 @@ nav .nav-link:focus, .nav-link:hover {
     color: #ffffff;
 }
 
-form .btn-outline {
+.btn-outline {
     color: #ffffff;
     border-color: #ffffff;
 } 
 
-form .btn-outline:hover, .btn-outline:focus {
+.btn-outline:hover, .btn-outline:focus {
     background-color: #ffffff;
     color: #000000;
     border-color: #F57E78;
 
 }
 
+form .btn {
+    color: #000000;
+    border-color: #F57E78;
+}
+
+form .btn-outline:hover, .btn-outline:focus {
+    background-color: #F57E78;
+    color: #ffffff;
+    border-color: #F57E78;
+
+}
+
 /* Estilos del pie de página */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
