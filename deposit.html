@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósitos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="d-flex flex-column vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-primary"> 
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="/landing.html">
+                <img src="img/dkcx14w-a3350365-d27b-45b3-905b-7bbd67a41087.png" alt="Bootstrap" width="35" height="30"> Piggy Wallet
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/landing.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dinero
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" id="link-transactions" href="/login.html">Transacciones</a></li>
+                        <li><a class="dropdown-item" id="link-sendmoney" href="/login.html">Enviar Dinero</a></li>
+                        <li><a class="dropdown-item" id="link-deposit" href="/login.html">Depósitos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item d-none" href="#">Legal</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item me-2" id="nav-login">
+                    <a class="nav-link" href="/login.html">Login</a>
+                    </li>
+                    <li class="nav-item" id="nav-register">
+                    <a href="/register.html"><button class="btn btn-outline" type="submit">Hazte Cliente</button></a>
+                    </li>
+
+                    <li class="nav-item d-flex flex-row" id="nav-user">
+                        <span class="nav-link me-2" id="user-greeting"></span>
+                        <button class="btn btn-outline btn-sm" id="btn-logout">
+                            Logout
+                        </button>
+                    </li>
+                    
+                    
+                </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2>Realizar depósito a tu cuenta.</h2>
+
+        <form id="depositForm" class="mt-4">
+        <div class="mb-3">
+            <label class="form-label">Monto</label>
+            <input type="number" class="form-control" id="depositAmount" min="1" required>
+        </div>
+
+        <button type="submit" class="btn btn-outline">
+            Depositar
+        </button>
+        </form>
+    </main>
+
+
+    <footer class="mt-auto text-white-50">
+        <p>Piggy Wallet, by <a href="https://github.com/Elationg/TareasTL" class="text-white">@elationg</a>.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/deposit.js"></script>
+    
+</body>
+</html>
